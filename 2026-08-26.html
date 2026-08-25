@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AIカンパニー 昨夜の確認 2026-08-26</title>
+<style>
+  :root {
+    --bg: #0c0e12;
+    --panel: #1a1f2a;
+    --line: #3d4660;
+    --text: #e8edf5;
+    --muted: #9aa6bb;
+    --claude: #d97757;
+    --ok: #6ecf7a;
+    --ng: #e07a7a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+    background: radial-gradient(ellipse 70% 40% at 50% 0%, #1a2230 0%, transparent 55%), var(--bg);
+    line-height: 1.55;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 20px 16px 88px; }
+  h1 { font-size: 1.35rem; margin: 0 0 6px; }
+  h1 span { color: var(--claude); }
+  .sub { color: var(--muted); font-size: 0.9rem; margin: 0 0 16px; }
+  .stats {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
+  }
+  .stat {
+    background: var(--panel); border: 2px solid var(--line); border-radius: 12px;
+    padding: 8px 12px; font-size: 0.85rem;
+  }
+  .stat b { color: var(--claude); }
+  .card {
+    background: var(--panel); border: 2px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; margin: 0 0 10px;
+  }
+  .card.ok { border-left: 4px solid var(--ok); }
+  .card.ng { border-left: 4px solid var(--ng); }
+  .card h2 { font-size: 1.02rem; margin: 4px 0 6px; }
+  .card p { margin: 0 0 8px; color: var(--muted); font-size: 0.92rem; }
+  .files { margin: 0 0 8px; padding-left: 1.2em; color: var(--muted); font-size: 0.8rem; }
+  .shot {
+    display: block; width: 100%; max-width: 390px; margin: 8px 0 0;
+    border-radius: 12px; border: 2px solid var(--line);
+  }
+  .preview {
+    display: block; width: 100%; height: 280px; margin: 8px 0 0;
+    border: 2px solid var(--line); border-radius: 12px; background: #fff;
+  }
+  .snip {
+    margin: 8px 0 0; padding: 10px 12px; overflow-x: auto;
+    background: #0c1018; border-radius: 10px; color: #d5deea;
+    font-size: 0.82rem; white-space: pre-wrap;
+  }
+  .meta { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.04em; }
+  .empty { color: var(--muted); }
+  .cta {
+    position: sticky; bottom: 0; margin: 22px -16px 0;
+    background: #141820; border-top: 2px solid var(--claude);
+    padding: 14px 16px 18px;
+  }
+  .cta strong { color: var(--claude); }
+  .cta p { margin: 6px 0 0; font-size: 0.92rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>昨夜の <span>AIカンパニー</span></h1>
+  <p class="sub">2026-08-26 · 生成 2026-08-26 05:30:47 +0900</p>
+  <div class="stats">
+    <div class="stat">成功 <b>7</b></div>
+    <div class="stat">失敗 <b>0</b></div>
+    <div class="stat">サイクル <b>7</b></div>
+    <div class="stat">差し戻し <b>0</b></div>
+  </div>
+  <article class="card ok"><div class="meta">#1 · B · ok</div><h2>旅行のしおりアプリ:四国1本目の画面3枠を項目リストにする</h2><p>四国1本目の画面3枠の項目リストは既存追記済みのため、goals.md の完了チェックを付けるだけで完了条件を満たした。</p><ul class="files"><li><code>10-Goals/goals.md</code></li></ul></article>
+<article class="card ok"><div class="meta">#2 · A · ok</div><h2>財務諸表RPG:経理RPGで仕訳〜決算。結果的に簿記の勉強になる</h2><p>Goals.md は今回の決定と直接対応するチェック項目がなかったため変更なし（プロダクトバックログの汎用アイデア行はそのまま残す）。</p><ul class="files"><li><code>30-Projects/財務諸表RPG.md</code></li></ul></article>
+<article class="card ok"><div class="meta">#3 · B · ok</div><h2>iPhoneウィジェット:本体アプリの拡張として足せる</h2><p>- `code/widget-mockup/nyakin-widget-mock.html`（新規）— ニャ筋想定のiPhoneウィジェットsmall/medium静的モック。今日未達成／達成の2状態、ニャ筋のテーマカラー（クリーム×オレン</p><ul class="files"><li><code>code/widget-mockup/nyakin-widget-mock.html</code></li><li><code>20-Areas/個人開発.md</code></li></ul><img class="shot" src="review-shots/2026-08-26-c3-1.png" alt="キャプチャ" /><img class="shot" src="review-shots/2026-08-26-c3-2.png" alt="キャプチャ" /></article>
+<article class="card ok"><div class="meta">#4 · A · ok</div><h2>Area更新: お酒</h2><p>日本酒節に生酛・速醸・山廃の違い（酒母製法と味の傾向）を調査メモとして追記し、updated日付を更新・コミット済み。</p><ul class="files"><li><code>20-Areas/お酒.md</code></li></ul><pre class="snip">**酒母（生酛 vs 速醸）のメモ**
+- 速醸（そくじょう）：醸造用乳酸を添加して雑菌を抑え、酒母を約2週間で仕上げる現代の主流製法。安定してクセの少ない酒質になりやすい。
+- 生酛（きもと）：蔵付き乳酸菌を自然に増殖させて酒母を作る伝統製法（酒母完成まで約4週間）。「山卸し（酛摺り）」という米をすり潰す工程が特徴だったが、明治期に山卸しを廃した簡易版＝**山廃（やまはい）**が派生。</pre></article>
+<article class="card ok"><div class="meta">#5 · A · ok</div><h2>Area更新: 世界史</h2><p>建築史節にゴシック建築（尖頭アーチ・フライング・バットレス・シャルトル大聖堂・ケルン大聖堂）の調査メモを追記し、コミット済み。</p><ul class="files"><li><code>20-Areas/世界史.md</code></li></ul><pre class="snip">**ゴシック建築の特徴メモ**
+- 尖頭アーチ（先の尖った頂点のアーチ）・リブ・ヴォールト（骨組み状の交差天井）・フライング・バットレス（外側から壁を支える控え壁）の3点セットで、壁の荷重負担を減らし**壁を薄く・窓を大きく**できるのが技術的なポイント。
+- その結果、大きなステンドグラスの窓を多用できるようになり、「光にあふれた聖堂」という美的効果が生まれた（ロマネスクの厚い壁・小窓と対照的）。</pre></article>
+<article class="card ok"><div class="meta">#6 · A · ok</div><h2>Area更新: 水耕-調達</h2><p>「調べた商品メモ欄」の空テーブルに、ネットポット候補（リビングファーム LFS-012-2／ASIN: B01D8XYV3C）を1件追記し、`updated` を2026-08-26に更新した。</p><ul class="files"><li><code>20-Areas/水耕-調達.md</code></li></ul></article>
+<article class="card ok"><div class="meta">#7 · A · ok</div><h2>まさしくんハイ風スポーツ:競技を1つに絞ってルール3行</h2><p>- `30-Projects/まさしくんハイ風スポーツ.md` — 競技を「三苫の一ミリ」に決定し、ルール3行（迫るライン→タップで止める→1mm判定でリプレイ）を追記</p><ul class="files"><li><code>30-Projects/まさしくんハイ風スポーツ.md</code></li><li><code>10-Goals/goals.md</code></li></ul><pre class="snip"># まさしくんハイ風スポーツ（スマホ）
+**まさしくんハイ!**（ABA Games／マウスで本格風競技）みたいな、ゆるいスポーツゲームをスマホで作りたい、というメモ。実装は未着手。
+最近はスポーツ・オリンピック系のゆるゲームが少ない、が動機。ブラウザにあった記憶、実体は Windows フリーゲーム。</pre></article>
+  <div class="cta">
+    <strong>確認したら、この Bot の LINE に返信して FB</strong>
+    <p>よかった／直して／テーマの選び方／実行の仕方。Cursor でも可。にゃみが 社長FB.md に載せる。</p>
+  </div>
+</main>
+</body>
+</html>
