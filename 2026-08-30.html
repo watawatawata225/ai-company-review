@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AIカンパニー 昨夜の確認 2026-08-29</title>
+<title>AIカンパニー 昨夜の確認 2026-08-30</title>
 <style>
   :root {
     --bg: #0c0e12;
@@ -92,17 +92,19 @@
 <div class="clawd-dance" role="img" aria-label="Clawd"></div>
 </div>
   <h1>昨夜の <span>AIカンパニー</span></h1>
-  <p class="sub">2026-08-29 · 生成 2026-08-30 08:10:05 +0900</p>
+  <p class="sub">2026-08-30 · 生成 2026-08-30 08:10:05 +0900</p>
   <div class="stats">
     <div class="stat">成功 <b>2</b></div>
     <div class="stat">失敗 <b>0</b></div>
     <div class="stat">サイクル <b>2</b></div>
     <div class="stat">差し戻し <b>0</b></div>
   </div>
-  <article class="card ok"><div class="meta">#2 · A · ok</div><h2>コード構成音あて:最小ルールを1節に落とす</h2><p>- 10-Goals/goals.md — 「コード構成音あて：最小ルールを1節に落とす」を完了チェックに更新（30-Projects/コード構成音あて.mdに2026-08-24付でMVPルール節が既にあったため、重複タスクとして解消）</p><ul class="files"><li><code>10-Goals/goals.md</code></li></ul></article>
-<article class="card ok"><div class="meta">#3 · B · ok</div><h2>旅行のしおりアプリ:画面3枠の紙芝居を書く</h2><p>旅行のしおりアプリの3画面（行程・地図・見どころ）の紙芝居をフロキャンアプリと同じ書式でたたき台化した。</p><ul class="files"><li><code>30-Projects/旅行のしおりアプリ.md</code></li><li><code>10-Goals/goals.md</code></li></ul><pre class="snip">## 画面3枚の紙芝居（たたき台）
-### 画面1: 行程画面
-- 表示内容: 日ごとのタイムライン（1行に時間・訪問先・移動・所要・金額概算）。コアの予定は◎バッジ、時間次第の予定は△バッジで区別。宿泊先は日の最後に固定表示</pre></article>
+  <article class="card ok"><div class="meta">#1 · A · ok</div><h2>僕の考えた最強の会社:良い会社/悪い会社の対比を人事か営業どちらか1組書く</h2><p>- `20-Areas/最強会社-人事組織.md` — 顧客事例テーブルに評価制度の良い会社(A社)/悪い会社(B社)対比を1組追記、updated更新</p><ul class="files"><li><code>20-Areas/最強会社-人事組織.md</code></li><li><code>20-Areas/僕の考えた最強の会社.md</code></li><li><code>10-Goals/goals.md</code></li></ul><pre class="snip">| 2026-08-30 | A社（良い例・外資系コンサル） | 評価KPIの頂点に「単価達成率×稼働率」のような中間指標を置かず、案件の粗利貢献＋難易度加点の複合指標にしている。マネージャが低稼働・高難度の案件を選ぶ判断を評価上も損しない形で承認できる。 | 中間KPIを外して最終成果（粗利・付加価値）に寄せると、高単価・高難度案件へ自然にシフトする。§評価制度の横断原則（最終成果に寄せ中間KPIで自由度を殺さない）と整合する事例。 |
+| 2026-08-30 | B社（悪い例・同業他社） | ボーナス算定式の最上位項目が「稼働率100%達成」。案件を選ばずとにかく埋める文化になり、低単価案件で稼働率だけ満たす社員が高評価になる。 | 稼働率のような中間KPIを頂点に置くと質より量に最適化され、高難度・高単価に挑む優秀層ほど「稼働率の奴隷」化を嫌って離職しやすくなる。 |
+- [x] 同じ機能で、良い会社と悪い会社の対比を1組書く（他社・顧客の人事評価事例）→ [[最強会社-人事組織]] 顧客事例（2026-08-30）</pre></article>
+<article class="card ok"><div class="meta">#2 · B · ok</div><h2>ハモリゲーム:Web Audio で主旋律再生だけの縦スライス仕様を1節に落とす</h2><p>- `30-Projects/ハモリゲーム.md` — 既存の `code/harmony-game/melody-slice.html` を根拠に「Phase 1 縦スライス仕様（1節）」（対象／非対象）を追記し、該当チェックボックスにチ</p><ul class="files"><li><code>30-Projects/ハモリゲーム.md</code></li><li><code>code/harmony-game/melody-slice.html</code></li><li><code>10-Goals/goals.md</code></li><li><code>melody-slice.html</code></li></ul><pre class="snip">### Phase 1 縦スライス仕様（1節）
+`code/harmony-game/melody-slice.html` を根拠とする最小の縦スライス。
+- **対象**: オリジナル短メロ（練習曲A・8音）を譜面データ（`t`/`midi`/`dur`）として持ち、`▶ 主旋律を再生` ボタン押下で Web Audio API により単音シーケンス再生する。再生中は音符バーで現在位置をハイライトするのみ。</pre></article>
   <div class="cta">
     <strong>確認したら、この Bot の LINE に返信して FB</strong>
     <p>よかった／直して／テーマの選び方／実行の仕方。Cursor でも可。にゃみが 社長FB.md に載せる。</p>
